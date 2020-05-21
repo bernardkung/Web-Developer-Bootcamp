@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Forms Exercise One-->
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" placeholder="John" required/>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" placeholder="Smith" required/>
+            
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="male" value="male"/>
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="female" value="female"/>
+            <label for="other">Other</label>
+            <input type="radio" name="sex" id="other" value="other"/>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="your email" required/>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="your password" maxlength=10 minlength=5 required/>
+
+            <label for="birthday">Birthday:</label>
+            <select name="month">
+                <option selected disabled hidden>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+            </select>
+            <select name="day">
+                <option selected disabled hidden>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <select name="year">
+                <option selected disabled hidden>Year</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+            </select>
+            
+            <label for="terms">I agree to the terms and conditions:</label>
+            <input type="checkbox" name="terms" value="terms">
+            
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
