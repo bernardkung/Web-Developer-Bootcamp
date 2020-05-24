@@ -1,0 +1,63 @@
+div {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+table {
+    margin: 0 auto;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+
+td {
+    margin: 0;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* Borders using pseudoclasses */
+/* Set all tds in first row to have no top border */
+/* tr:first-child td {
+    border-top: none;
+}
+
+/* Set all tds in bottom row to have no bottom border */
+/* tr:last-child td {
+    border-bottom: none;
+}
+
+/* Set left most tds to have no left border */
+/* td:first-child {
+    border-left: none;
+} */
+
+
+/* Set right most tds to have no right border */
+/* td:last-child {
+    border-right: none;
+} */
+
+/* Borders using classes */
+.x_left {
+    border-left: none;
+}
+
+.x_right {
+    border-right: none;
+}
+
+.y_top {
+    border-top: none;
+}
+
+.y_bot {
+    border-bottom: none;
+}
