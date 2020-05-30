@@ -1,0 +1,22 @@
+
+
+body {
+    background-color: rgb(204, 204, 219);
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+}
+
+button {
+    margin-top: 20px;
+}
+
+input {
+    margin-top: 20px;
+}
+
+.green {
+    color: green;
+}

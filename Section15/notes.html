@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Methods</title>
+</head>
+<body>
+    <h1>Methods</h1>
+    <p id="blurb"><strong>Five Primary Methods for selecting Elements</strong></strong></p>
+
+    <ul>
+        <li>
+            <p>
+                <span class="method"><em>document.getElementById()</em></span> - 
+                Takes a string argument and returns the first (ideally, only) element with matching ID.
+                
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="method"><em>document.getElementsByClassName()</em></span> - 
+                Takes a string argument and returns an HTMLCollection of elements that have a matching class.
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="method"><em>document.getElementsByTagName()</em></span> - 
+                Takes a string argument and returns an HTMLCollection of elements that have a matching tag type.
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="method"><em>document.querySelector()</em></span> - 
+                Takes a string argument of any CSS-style selector and returns the first matching element.
+            </p>
+
+        </li>
+        <li>
+            <p>
+                <span class="method"><em>document.querySelectorAll()</em></span> - 
+                Takes a string argument of any CSS-style selector and returns an HTMLCollection of all matching element.
+            </p>
+
+        </li>
+    </ul>
+
+    <h1>Style</h1>
+    <p><strong>The style property accesses the CSS styling of an element.</strong></p>
+    <p>var tag = document.getElementById("example")</p>
+    <ul>
+        <li><em>tag.style.color</em></li>
+        <li><em>tag.style.border</em></li>
+        <li><em>tag.style.fontSize</em></li>
+    </ul>
+    <h1>classList</h1>
+    <p><strong>While elements can be individually styled one style element at a time, it's DRYer to to change an element's class.</strong></p>
+
+    <p>var tag = document.getElementById("example")</p>
+    <ul>
+        <li><em>tag.classList.add("className")</em></li>
+        <li><em>tag.classList.remove("className")</em></li>
+        <li><em>tag.classList.toggle("className")</em></li>
+    </ul>
+
+    <h1>textContent</h1>
+    <p><strong>Returns a string of all the text contained in a given element. 
+        This allows us to retrieve text content, but also set the text content.
+        Note: this will also wipe out any tags nested inside the tag. If attempting to overwrite content with tags, then use innerHTML.
+    </strong></p>
+
+    <p>var tag = document.querySelector("p");</p>
+    <p><em>tag.textContent</em> - retrieves text content</p>
+    <p><em>tag.textContent = "new text content"</em> - sets new text content</p>
+
+    <h1>innerHTML</h1>    
+    <p><strong>
+        Returns a string of all the HTML contained in a given element.
+        This is similar to textContent, but allows us to override content with HTML, not just plaintext.
+
+    </strong></p>
+
+    <h1>Attributes</h1>
+    <p><strong>Use <em> getAttribute()</em> and <em>setAttribute()</em> to read and write attributes like <em>src</em> or <em>href</em>.</strong></p>
+
+    <p>var link = document.querySelector("id");</p>
+    <p>link.getAttribute("href")</p>
+    <p>link.setAttribute("href", "www.google.com");</p>
+
+</body>
+</html>

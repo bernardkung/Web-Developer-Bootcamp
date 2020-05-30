@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 15 Notes</title>
+</head>
+<body>
+    <h1>DOM Events</h1>
+    <p>Events:</p>
+    <ul>
+        <li>Clicking on a button</li>
+        <li>Hovering over a link</li>
+        <li>Pressing a key</li>
+        <li>Dragging and Dropping</li>
+    </ul>
+
+    <h2>The Process</h2>
+        <p><strong>Select an <em>element</em>, and then add an <em>event listener</em>.</strong></p>
+
+    <h2>The Syntax</h2>
+    <p>element.addEventListener(type, functionToCall);</p>
+
+    <p>var button = document.querySelector("button");</p>
+    <p>
+    button.addEventListener("click", function() {<br>
+        console.log("Custom function code here");<br>
+    });
+    </p>
+
+    <p>Using current methods, we could for example override a textContent after a button is clicked.</p>
+    <ul>
+        <li>An element can have multiple event listeners</li>
+        <li>An element like a header may be shaped differently than the content. like with a header.</li>
+        <li>An event listener on a UL applies to all LIs</li>
+        <li>Can loop through an HTMLcollection and set event listeners on each. Contextually, can use this.
+            <p>for (var i = 0; i < lis.length; i++) {
+                lis[i].addEventListener("click", function() {
+                    this.style.color = "pink";
+                }</p>
+        </li>
+
+    </ul>
+
+
+</body>
+</html>
