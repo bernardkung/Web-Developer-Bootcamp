@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 18 Notes: Intro to jQuery</title>
+</head>
+<body>
+    <div class="section">
+    <h2>Events</h2>
+    <p><strong>$('selector').click(function() {})</strong></p>
+    <p>Add click listener to all selected element(s).</p>
+    
+    <p><strong>$('selector').</strong></p>
+
+    <p><strong>$(this)</strong></p>
+    <p>Keyword for selecting current element. e.g. $("button").click(function() {
+        $(this).css("background", "pink")})</p>
+
+    <p><strong>$('selector').keypress()</strong></p>
+    <p>Triggered right after key press, and returns the actual key pressed.</p>
+
+    <p><strong>$('selector').keydown()</strong></p>
+    <p>Triggered right after key press, and returns a code based on the actual key pressed.</p>
+    </div>
+
+    <p><strong>$('selector').on(event, function)</strong></p>
+    <p>Analoguous to the <em>.addEventListener()</em> method.</p>
+    <ul>
+        <li><em>click()</em> only adds listeners for existing elements.</li>
+        <li><em>on()</em> will add listeners for all potential future elements.</li>
+    </ul>
+        
+
+</body>
+</html>

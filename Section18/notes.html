@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 18 Notes: Intro to jQuery</title>
+</head>
+<body>
+    <div class="section">
+    <h2>Adding jQuery</h2> 
+    <p>Local jQuery</p>
+    <p>script type="text/javascript" src="jquery.js"</p>
+
+    <p>CDN jQuery</p>
+    <p>script type="text/javascript" src="https://code.jquery.com/jquery-#.#.#.js</p>
+    </div>
+
+    <div class="section">
+    <h2>Selecting Items</h2>    
+    <p><em>$("selector")</em></p>
+    <p>Selecting with jQuery is similar to querySelectorAll.</p>
+    <ul>
+        <li>$("tag")</li>
+        <li>$(".class")</li>
+        <li>$("#class")</li>
+        <li>$("parent child")</li>
+    </ul>
+
+    <h2>Manipulating Style</h2>
+    <p>The <em>.css()</em> method is jQuery's interface to styling.</p>
+    <p>$(selector).css(property, value)</p>
+    <p>If only a propery is passed, the value of the element is retrieved.<br>
+    If a value is passed, the property is set to that value.</p>
+    </div>
+
+    <div class="section">
+    <h2>Methods</h2>
+    <p><em>$("selector").text(optional arg)</em></p>
+    <p>Used to get the text content of (all) selector (and all children). 
+        If an argument is passed, the text content is set to the argument.
+        This is analoguous to the native JS .innerText method.
+    </p>
+
+    <p><em>$("selector").html(optional arg)</em></p>
+    <p>Analoguous to the native JS .innerHTML method.</p>
+
+    <p><em>$("selector").attr(property, value)</em></p>
+    <p>Used to select or set the attribute of a given property to value, if provided.</p>
+
+    <p><em>$("selector").val(optionalvalue)</em></p>
+    <p>Get the current value of the first matched element, or set to provided value argument.</p>
+    
+    <p><em>$("selector").addClass("classname")</em></p>
+    <p>Add class to selected element(s).</p>
+    <p><em>$("selector").removeClass("classname")</em></p>
+    <p>Remove class from selected element(s).</p>
+    <p><em>$("selector").toggleClass("classname")</em></p>
+    <p>Toggle class on selected element(s).</p>
+    </div>
+</body>
+</html>
