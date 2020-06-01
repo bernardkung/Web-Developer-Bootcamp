@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circles</title>
+
+  <link rel="stylesheet" href="assets/css/circles.css">
+  <script type="text/javascript" src="assets/js/paper.js/dist/paper-full.js"></script>
+  
+  <!-- Define inlined PaperScript associate it with myCanvas -->
+  <script type="text/paperscript" canvas="myCanvas">
+    // Draw a square grid of 100 circles with radius 10 spaced 100px apart.
+    for (var y = 100; y <= 1100; y += 100) {
+      for (var x = 100; x <= 1100; x += 100) {
+        new Path.Circle({
+          center: [x, y],
+          radius: 10,
+          strokeColor: 'red',
+          strokeWidth: '3px',
+          fillColor: 'purple',
+        });
+      }
+    }
+  </script>
+
+</head>
+<body>
+
+  
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

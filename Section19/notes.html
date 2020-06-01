@@ -23,15 +23,22 @@
 
     <p><strong>$('selector').keydown()</strong></p>
     <p>Triggered right after key press, and returns a code based on the actual key pressed.</p>
-    </div>
 
-    <p><strong>$('selector').on(event, function)</strong></p>
+
+    <p><strong>$('selector').on(event, child, function)</strong></p>
     <p>Analoguous to the <em>.addEventListener()</em> method.</p>
     <ul>
-        <li><em>click()</em> only adds listeners for existing elements.</li>
+        <li><em>click()</em> only adds listeners for existing elements. For example, if we add new elements to a page they don't gain the click events.</li>
         <li><em>on()</em> will add listeners for all potential future elements.</li>
+        <li>This is done by setting the event on the parent, and then specifying as argument the children elements (including future children elements) which the event should apply to.</li>
     </ul>
-        
+    </div>
+    
+    <div>
+        <h2>Effects</h2>
+        <p><strong>$('selector').fadeOut()</strong></p>
+        <p>Fades out selected element(s).</p>
+    </div>
 
 </body>
 </html>
