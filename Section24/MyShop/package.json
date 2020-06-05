@@ -2,7 +2,7 @@
   "name": "myshop",
   "version": "1.0.0",
   "description": "",
-  "main": "myShop.js",
+  "main": "listProducts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
